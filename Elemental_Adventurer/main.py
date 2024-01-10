@@ -1,4 +1,6 @@
-from mycode.funk import *
+from for_game.mycode.funk import *
+# pyinstaller main.py -F --name Elemental_Adventurer --noconsole --ico=for_game//image//other//iconka.ico
+
 
 if "__main__" == __name__:
     pygame.init()
@@ -16,8 +18,6 @@ if "__main__" == __name__:
                 running = False
 
         game.update()
-        if player.health <= 0:
-            running = False
 
         pygame.display.flip()
         clock.tick(50)
